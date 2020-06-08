@@ -209,6 +209,7 @@
 }
 .about__inner{
 	display: flex;
+	margin-bottom: 80px;
 }
 .about__master{
 	margin-right: 95px;
@@ -227,9 +228,6 @@
 .about__master-span{
 	display: block;
 	font-size: 25px;
-}
-.about__content{
-
 }
 .about__content-title{
 	@include f500;
@@ -253,6 +251,19 @@
 		margin-bottom: 0;
 	}
 }
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide{
+	min-height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+// .swiper-pagination-progressbar-fill{
+  // background-color:$light-blue !important;
+// }
 //end about
 //start advantages
 .advantages{
@@ -274,7 +285,7 @@ justify-content: space-between;
 	padding-left: 150px;
 	font-size: 30px;
 	line-height: 35px;
-	margin-bottom: 85px;
+	margin-bottom: 100px;
 	max-width: 730px;
 	min-height: 70px;
 	&:last-child{

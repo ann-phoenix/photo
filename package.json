@@ -7,7 +7,9 @@
     "gulp-webpcss": "^1.1.1",
     "jquery": "^3.4.1",
     "mkdir": "0.0.2",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^5.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.10.1",
