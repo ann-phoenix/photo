@@ -12,12 +12,24 @@ $(function(){
 			disableOnInteraction: false,
 		},
 	});
-	var mySwiper = new Swiper('.swiper2', {
-    spaceBetween: 1,
-    slidesPerView: 3,
-    centeredSlides: true,
-    roundLengths: true,
-    loop: true,
-    loopAdditionalSlides: 30,
-  });
+
+	$(".portfolio__mini").slice(0, 8).show();
+$("body").on('click touchstart', '.portfolio__link', function (e) {
+		e.preventDefault();
+		$(".portfolio__mini:hidden").slice(0, 4).slideDown();
+		if ($(".portfolio__mini:hidden").length == 0) {
+				$(".portfolio__link").css('visibility', 'hidden');
+		}
+});
+});
+
+
+	
+	
+	
+	
+	
+	
+	
+	
 });
