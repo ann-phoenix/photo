@@ -13,6 +13,17 @@ $(function(){
 		},
 	});
 
+	var swiper = new Swiper('.swiper2', {
+		slidesPerView: 3,
+		spaceBetween: 30,
+		loop: true,
+		autoplay: {
+			delay: 5500,
+			disableOnInteraction: false,
+		},
+	});
+
+
 	$(".portfolio__mini").slice(0, 8).show();
 $("body").on('click touchstart', '.portfolio__link', function (e) {
 		e.preventDefault();
@@ -20,16 +31,10 @@ $("body").on('click touchstart', '.portfolio__link', function (e) {
 		if ($(".portfolio__mini:hidden").length == 0) {
 				$(".portfolio__link").css('visibility', 'hidden');
 		}
-});
+ });
 });
 
 
-	
-	
-	
-	
-	
-	
-	
-	
-});
+
+
+

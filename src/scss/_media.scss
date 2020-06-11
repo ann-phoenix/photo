@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+  .reviews-card {
+    flex-wrap: nowrap;
+  }
+  .reviews-card__text {
+    width: 66%;
+  } 
+  .reviews-card__image {
+    width: 33%;
+  }
+}
