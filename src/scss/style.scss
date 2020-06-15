@@ -144,7 +144,6 @@
 .title {
 	font-size: 58px;
 	line-height: 60px;
-	margin-bottom: 20px;
 	@include f500;
 	text-align: center;
 	text-transform: uppercase;
@@ -294,9 +293,6 @@
 	background-size: cover;
 }
 
-.swiper-pagination-progressbar-fill {
-	background-color: $blue !important;
-}
 
 //end about
 //start advantages
@@ -586,18 +582,18 @@
 	font-size: 35px;
 	line-height: 35px;
 }
+
 //end steps
 
 //start reviews
 
-.reviews{
+.reviews {
 	padding: 120px 0;
 }
 
-.reviews__title{
+.reviews__title {
 	margin-bottom: 90px;
 }
-
 .swiper2 {
 	max-width: 1400px;
 	height: 100%;
@@ -605,18 +601,18 @@
 
 .slide2 {
 	max-width: 450px !important;
-  min-height: 300px !important;
-  text-align: center;
-  font-size: 18px;
-  background:transparent;
-  display: flex;
-  justify-content: center;
+	min-height: 300px !important;
+	text-align: center;
+	font-size: 18px;
+	background: transparent;
+	display: flex;
+	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	text-align: left;
-}  
+}
 
-.slide2__text{
+.slide2__text {
 	min-height: 100px;
 	margin-bottom: 30px;
 	display: flex;
@@ -624,46 +620,184 @@
 	flex-direction: column;
 	flex-grow: 1;
 }
-.slide2__name{
+
+.slide2__name {
 	min-height: 30px;
 }
-.slide2__img{
+
+.slide2__img {
 	width: 80px;
 	height: 80px;
 	object-fit: cover;
 	border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-		background-size: cover;
-		margin-right: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-right: 30px;
 }
 
-.slide2__author{
+.slide2__author {
 	display: flex;
 	align-self: flex-start;
 	flex-grow: 1;
-  align-items: flex-end;
+	align-items: flex-end;
 }
 
-// .swiper-button-prev-unique,
-// .swiper-button-next-unique {
-  // width: 60px;
-  // height: 60px;
-  // position: absolute;
-  // top: 50%;
-  // transform: translateY(-50%);
-  // border-radius: 60px;
-  // z-index: 9999;
-// }
-// 
-// .swiper-button-prev-unique {
-  // left: -30px;
-// }
-// 
-// .swiper-button-next-unique {
-  // right: -30px;
-// }
+
+.swiper__wrapper-all {
+	position: relative;
+}
+
+.swiper-button-next {
+	position: absolute;
+	content: "";
+	top: 40%;
+	right: -50px;
+}
+
+.swiper-button-prev {
+	position: absolute;
+	content: "";
+	top: 40%;
+	left: -50px;
+}
+
 //end reviews
+//start more
+.more {
+	padding: 120px 0;
+}
+.more__title {
+	margin-bottom: 90px;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		right: 20%;
+		background-image: url(../images/icons/instagram.svg);
+    width: 55px;
+    height: 55px;
+	}
+}
+
+.swiper3 {
+	width: 100%;
+	height: 100%;
+}
+
+.slide3 {
+	min-height: 500px;
+	background-position: 0 20%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: cover;
+}
+
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+	background-color: $blue !important;
+}
+//end more
+//start contacts
+.contacts{
+	padding: 120px 0;
+}
+.contacts__title{
+	margin-bottom: 90px;
+}
+.contacts__inner{
+	display: flex;
+}
+.contacts__left{
+	border-right: 3px solid $blue;
+	padding-right: 50px;
+}
+.contacts__img{
+	background-position: 60% ;
+	width: 600px;
+	height: 700px;
+	object-fit: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: scaleX(-1);
+
+}
+.contacts__right{
+	padding-left: 50px;
+	max-width: 900px;
+}
+.contacts__right-text{
+	margin-bottom: 70px;
+}
+.contacts__phone{
+	margin-bottom: 20px;
+	padding-left: 50px;
+	position: relative;
+	&::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image: url(../images/icons/phone-call__blue.svg);
+		width: 25px;
+		height: 25px;
+	}
+}
+.contacts__mail{
+	margin-bottom: 50px;
+	padding-left: 50px;
+	position: relative;
+&::before{
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-image: url(../images/icons/mail.svg);
+	width: 27px;
+	height: 27px;
+}
+}
+.contacts__mail-link,
+.contacts__phone-link{
+	color: $white;
+}
+.contacts__form{
+	display: flex;
+	flex-direction: column;
+}
+.contacts__form-input{
+	border: none;
+	background-color: transparent;
+	border-bottom: 2px solid $blue;
+	color: $white;
+	line-height: 35px;
+	padding: 10px 5px;
+	margin-bottom: 22px;
+}
+.contacts__form-input::placeholder{
+	color: $white;
+}
+.contacts__form-textarea{
+	border: none;
+background-color: transparent;
+border-bottom: 2px solid $blue;
+color: $white;
+line-height: 35px;
+resize: none;
+padding: 10px 5px;
+margin-bottom: 75px;
+
+}
+.contacts__form-textarea::placeholder{
+	color: $white;
+}
+.contacts__form-button{
+	text-align: center;
+	display: block;
+	width: 220px;
+}
+//end contacts
 //-----------------------------------------------------------------------------------------------------------
 //
 //                                                    END CODE

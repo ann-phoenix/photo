@@ -15,14 +15,29 @@ $(function(){
 
 	var swiper = new Swiper('.swiper2', {
 		slidesPerView: 3,
-		spaceBetween: 30,
+		spaceBetween: 40,
 		loop: true,
+		autoplay: {
+			delay: 8000,
+			disableOnInteraction: false,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+	var swiper = new Swiper('.swiper3', {
+		slidesPerView: 3,
+		spaceBetween: 10,
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'progressbar',
+		},
 		autoplay: {
 			delay: 5500,
 			disableOnInteraction: false,
 		},
 	});
-
 
 	$(".portfolio__mini").slice(0, 8).show();
 $("body").on('click touchstart', '.portfolio__link', function (e) {
