@@ -594,6 +594,7 @@
 .reviews__title {
 	margin-bottom: 90px;
 }
+
 .swiper2 {
 	max-width: 1400px;
 	height: 100%;
@@ -667,15 +668,19 @@
 .more {
 	padding: 120px 0;
 }
-.more__title {
+.more__box{
 	margin-bottom: 90px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.more__box-link{
+	display: block;
 	position: relative;
-
-	&::before {
-		content: '';
+	&::before{
 		position: absolute;
+		content: "";
 		right: 20%;
-		background-image: url(../images/icons/instagram.svg);
+    background-image: url(../images/icons/instagram.svg);
     width: 55px;
     height: 55px;
 	}
@@ -695,26 +700,31 @@
 }
 
 
-.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
 	background-color: $blue !important;
 }
+
 //end more
 //start contacts
-.contacts{
+.contacts {
 	padding: 120px 0;
 }
-.contacts__title{
+
+.contacts__title {
 	margin-bottom: 90px;
 }
-.contacts__inner{
+
+.contacts__inner {
 	display: flex;
 }
-.contacts__left{
+
+.contacts__left {
 	border-right: 3px solid $blue;
 	padding-right: 50px;
 }
-.contacts__img{
-	background-position: 60% ;
+
+.contacts__img {
+	background-position: 60%;
 	width: 600px;
 	height: 700px;
 	object-fit: cover;
@@ -723,18 +733,22 @@
 	transform: scaleX(-1);
 
 }
-.contacts__right{
+
+.contacts__right {
 	padding-left: 50px;
 	max-width: 900px;
 }
-.contacts__right-text{
+
+.contacts__right-text {
 	margin-bottom: 70px;
 }
-.contacts__phone{
+
+.contacts__phone {
 	margin-bottom: 20px;
 	padding-left: 50px;
 	position: relative;
-	&::before{
+
+	&::before {
 		content: "";
 		position: absolute;
 		top: 0;
@@ -744,29 +758,34 @@
 		height: 25px;
 	}
 }
-.contacts__mail{
+
+.contacts__mail {
 	margin-bottom: 50px;
 	padding-left: 50px;
 	position: relative;
-&::before{
-	content: "";
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	background-image: url(../images/icons/mail.svg);
-	width: 27px;
-	height: 27px;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		background-image: url(../images/icons/mail.svg);
+		width: 27px;
+		height: 27px;
+	}
 }
-}
+
 .contacts__mail-link,
-.contacts__phone-link{
+.contacts__phone-link {
 	color: $white;
 }
-.contacts__form{
+
+.contacts__form {
 	display: flex;
 	flex-direction: column;
 }
-.contacts__form-input{
+
+.contacts__form-input {
 	border: none;
 	background-color: transparent;
 	border-bottom: 2px solid $blue;
@@ -775,29 +794,106 @@
 	padding: 10px 5px;
 	margin-bottom: 22px;
 }
-.contacts__form-input::placeholder{
+
+.contacts__form-input::placeholder {
 	color: $white;
 }
-.contacts__form-textarea{
+
+.contacts__form-textarea {
 	border: none;
-background-color: transparent;
-border-bottom: 2px solid $blue;
-color: $white;
-line-height: 35px;
-resize: none;
-padding: 10px 5px;
-margin-bottom: 75px;
+	background-color: transparent;
+	border-bottom: 2px solid $blue;
+	color: $white;
+	line-height: 35px;
+	resize: none;
+	padding: 10px 5px;
+	margin-bottom: 75px;
 
 }
-.contacts__form-textarea::placeholder{
+
+.contacts__form-textarea::placeholder {
 	color: $white;
 }
-.contacts__form-button{
+
+.contacts__form-button {
 	text-align: center;
 	display: block;
 	width: 220px;
 }
+
 //end contacts
+//start footer
+.footer__line {
+	border-top: 3px solid $blue;
+	padding-bottom: 30px;
+}
+
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__list {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.footer__list-item {
+	margin-right: 35px;
+}
+
+.footer__list-link {
+	color: $white;
+	text-transform: uppercase;
+	position: relative;
+	padding-bottom: 3px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-color: #767677;
+		display: none;
+		left: 0%;
+		bottom: 0;
+	}
+}
+.footer__list-link:hover::after {
+	display: block;
+}
+
+.footer__info {
+	padding: 0px 10px 0 10px;
+}
+
+.footer__text {
+	font-size: 20px;
+	max-width: 480px;
+}
+
+.footer__social-link {
+	position: relative;
+	margin-left: 60px;
+}
+
+.footer__social-link::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	background-image: url(../images/icons/instagram-white.svg);
+	width: 35px;
+	height: 35px;
+}
+
+.footer__social-link:hover::before {
+	background-image: url(../images/icons/instagram.svg);
+	width: 35px;
+	height: 35px;
+}
+
+//end footer
 //-----------------------------------------------------------------------------------------------------------
 //
 //                                                    END CODE
