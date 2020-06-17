@@ -24,17 +24,17 @@
 						<div class="menu__btn-line"></div>
 					</div>
 					<ul class="header__menu-list">
-						<li class="header__menu-item"><a class="header__menu-link" href="#">О студии</a></li>
-						<li class="header__menu-item"><a class="header__menu-link" href="#">Преимущества</a></li>
-						<li class="header__menu-item"><a class="header__menu-link" href="#">Портфолио</a></li>
-						<li class="header__menu-item"><a class="header__menu-link" href="#">Тарифы</a></li>
-						<li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+						<li class="header__menu-item"><a class="header__menu-link" href="#about">О студии</a></li>
+						<li class="header__menu-item"><a class="header__menu-link" href="#advantages">Преимущества</a></li>
+						<li class="header__menu-item"><a class="header__menu-link" href="#portfolio">Портфолио</a></li>
+						<li class="header__menu-item"><a class="header__menu-link" href="#tariff">Тарифы</a></li>
+						<li class="header__menu-item"><a class="header__menu-link" href="#contacts">Контакты</a></li>
 					</ul>
 				</nav>
 				<div class="header__contact">
 					<a class="header__phone" href="tel:8(800)7757083
 					">8 (800) 775 70 83</a>
-					<button class="header__btn rightplus-blick btn">Записаться</button>
+					<button data-fancybox data-src="#modal" href="javascript:;" class="header__btn rightplus-blick btn">Записаться</button>
 				</div>
 			</div>
 			<div class="header__content">
@@ -88,7 +88,7 @@
 	</div>
 </header>
   <!-- about -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="about__inner">
         <div class="about__master">
@@ -136,7 +136,7 @@
   </section>
   <!--/about-->
   <!--advantages-->
-  <section class="advantages">
+  <section class="advantages" id="advantages">
     <div class="container">
       <div class="advantages__title title">Наши преимущества</div>
       <div class="advantages__inner">
@@ -160,7 +160,7 @@
   </section>
   <!--/advantages-->
   <!--portfolio-->
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="portfolio__title title">Портфолио</div>
     <div class="portfolio__subtitle">Примеры работ, снятых и обработанных нашей командой: в Photo Ideal и за пределами
       студии </div>
@@ -244,7 +244,7 @@
   </section>
   <!--/portfolio-->
   <!--tariff-->
-  <section class="tariff">
+  <section class="tariff" id="tariff">
     <div class="container">
       <div class="tariff__title title">Тарифы</div>
       <div class="tariff__inner">
@@ -255,7 +255,7 @@
             <div class="tariff__item-time">15-25 минут</div>
             <div class="tariff__item-photo">5 фото в ретуши</div>
           </div>
-          <a class="tariff__item-link btn" href="#">Забронировать</a>
+          <a data-fancybox data-src="#modal" href="javascript:;" class="tariff__item-link btn" >Забронировать</a>
         </div>
         <div class="tariff__item">
           <div class="tariff__item-title">Фотосессия "Бизнес-портрет"</div>
@@ -264,7 +264,7 @@
             <div class="tariff__item-time">1 час</div>
             <div class="tariff__item-photo">5 фото в ретуши</div>
           </div>
-          <a class="tariff__item-link btn" href="#">Забронировать</a>
+          <a data-fancybox data-src="#modal" href="javascript:;" class="tariff__item-link btn" >Забронировать</a>
         </div>
         <div class="tariff__item">
           <div class="tariff__item-title">Выездная промышленная съемка</div>
@@ -273,7 +273,7 @@
             <div class="tariff__item-time">1 час</div>
             <div class="tariff__item-photo">5 фото в ретуши</div>
           </div>
-          <a class="tariff__item-link btn" href="#">Забронировать</a>
+          <a data-fancybox data-src="#modal" href="javascript:;" class="tariff__item-link btn" >Забронировать</a>
         </div>
         <div class="tariff__item">
           <div class="tariff__item-title">Выездная интерьерная съемка </div>
@@ -282,7 +282,7 @@
             <div class="tariff__item-time">1 час</div>
             <div class="tariff__item-photo">5 фото в ретуши</div>
           </div>
-          <a class="tariff__item-link btn" href="#">Забронировать</a>
+          <a data-fancybox data-src="#modal" href="javascript:;" class="tariff__item-link btn" >Забронировать</a>
         </div>
       </div>
     </div>
@@ -417,6 +417,7 @@
     </div>
   </section>
   <!--/reviews-->
+  <!--more-->
   <section class="more">
     <div class="container">
       <div class="more__box">
@@ -437,7 +438,9 @@
       </div>
     </div>
   </section>
-  <section class="contacts">
+  <!--/more-->
+  <!--contacts-->
+  <section class="contacts" id="contacts">
     <div class="container">
       <div class="contacts__title title">Контакты</div>
       <div class="contacts__inner">
@@ -446,13 +449,13 @@
           </div>
         </div>
         <div class="contacts__right">
-          <div class="contacts__right-text"> Мы работаем в Петербурге, в Москве и по всему миру. Для того, чтобы заказать съемку или получить консультацию по выбору комплекса услуг, Вы можете позвонить, написать нам на почту или оставить свои контакты для связи ниже. </div>
+          <div class="contacts__right-text"> Мы работаем в Петербурге, в Москве и по всей России. Для того, чтобы заказать съемку или получить консультацию по выбору комплекса услуг, Вы можете позвонить, написать нам на почту или оставить свои контакты для связи ниже. </div>
           <div class="contacts__phone">
             <a class="contacts__phone-link" href="tel:88007757083
             ">8 (800) 775 70 83</a>
           </div>
           <div class="contacts__mail">
-            <a class="contacts__mail-link" href=""> info@photocrew.ru</a>
+            <a class="contacts__mail-link"> info@photocrew.ru</a>
           </div>
             <form class="contacts__form" action="">
               <input class="contacts__form-input" type="text" placeholder="Имя*" required>
@@ -465,7 +468,10 @@
         </div>
       </div>
     </div>
-  </section> <footer>
+  </section>
+  <!--/contacts-->
+
+  <footer>
 	<div class="footer__line"></div>
 	<div class="container">
 		<div class="footer__inner">
@@ -480,7 +486,7 @@
 					<li class="footer__list-item"> <a class="footer__list-link" href="#">Обучение</a></li>
 				</ul>
 				<div class="footer__text">
-					<p class="footer__text-paragraph"> © Photo Ideal 2013–2020 | Студия деловой фотографии </p>
+					<p class="footer__text-paragraph"> © Photo Ideal 2011–2020 | Студия деловой фотографии </p>
 					<p class="footer__text-paragraph"> Все права принадлежат ИП Матюнин Сергей Иванович </p>
 				</div>
 			</div>
@@ -489,9 +495,36 @@
 			</div>
 		</div>
 	</div>
-</footer> <script async src="js/webp.min.js"></script>
+</footer> 
+  <!--modal-->
+	<div id="modal">
+		<div class="book__wrapper">
+			<div class="book__title">
+				Заполните форму
+      </div>
+      <div class="book__subtitle">
+        Мы свяжемся с Вами в течение часа
+      </div>
+			<form class="book__form">
+				<label class="book__form-label">
+					<input class="book__form-input" type="text" placeholder="Имя*" required>
+				</label>
+				<label class="book__form-label">
+					<input class="book__form-input phone" type="tel" placeholder="Телефон*" required>
+        </label>
+        <label class="book__form-label">
+          <input class="book__form-input" type="book__form-input" placeholder="Почта*" required>
+        </label>
+        <button class="book__btn">Отправить</button>
+			</form>
+		</div>
+  </div>
+  <!--/modal-->
+  <script async src="js/webp.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
+
+
 </body>
 
 </html>

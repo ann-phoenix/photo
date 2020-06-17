@@ -100,6 +100,8 @@ gulp.task("style", function () {
 			"node_modules/swiper/css/swiper.css",
 			"node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css",
 			"node_modules/slick-carousel/slick/slick.css",
+			"node_modules/aos/dist/aos.css",
+
 
 
 		])
@@ -118,8 +120,8 @@ gulp.task("script", function () {
 			"node_modules/swiper/js/swiper.js",
 			"node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js",
 			"node_modules/slick-carousel/slick/slick.js",
-
-
+			"node_modules/jquery.maskedinput/src/jquery.maskedinput.js",
+			"node_modules/aos/dist/aos.js",
 		])
 		.pipe(size())
 		.pipe(babel())

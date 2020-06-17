@@ -49,6 +49,18 @@ $("body").on('click touchstart', '.portfolio__link', function (e) {
  });
 });
 
+$(document).ready(function(){
+	$('a[href^="#"]').click(function(){
+		var target = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(target).offset().top
+		}, 1000);
+	});
+});
+
+$(".phone").mask("+7 (999) 99-99-999");
+
+
 
 
 
