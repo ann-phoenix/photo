@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru"> @@include('components/_head.html')
 
-<body> @@include('components/_header.html')
+<body>
+  <div class="wrapper">
+    <div class="content">
+  @@include('components/_header.html')
   <!-- about -->
   <section class="about" id="about">
     <div class="container">
@@ -385,7 +388,7 @@
     </div>
   </section>
   <!--/contacts-->
-
+</div>
   @@include('components/_footer.html') 
   <!--modal-->
 	<div id="modal">
@@ -413,6 +416,7 @@
   <!--/modal-->
   @@include('components/_scripts.html')
 
+</div>
 
 </body>
 

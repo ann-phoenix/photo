@@ -60,8 +60,10 @@ $(document).ready(function(){
 
 $(".phone").mask("+7 (999) 99-99-999");
 
+$('.header__burger').on('click', function(){
+	$('.header__menu-list').slideToggle();
+ });
 
-
-
-
-
+$('.header__burger').click(function(event){
+	$('.header__burger').toggleClass('active');
+});

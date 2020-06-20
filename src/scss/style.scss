@@ -28,17 +28,15 @@
 	background-color: rgba(38, 38, 40, .6);
 
 }
-
+	
 .header__top {
-	align-items: center;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	min-height: 90px;
 	letter-spacing: 1px;
 	font-size: 23px;
-
 }
-
 .header__menu-list {
 	display: flex;
 }
@@ -100,6 +98,7 @@
 	cursor: pointer;
 	overflow: hidden;
 	font-size: 20px;
+	transition: all .3s;
 
 	&:hover {
 		filter: brightness(1.2);
@@ -182,7 +181,7 @@
 	padding: 10px 10px 30px 10px;
 }
 
-.menu__btn {
+.header__burger {
 	display: none;
 }
 
@@ -218,6 +217,7 @@
 	font-size: 23px;
 	margin-bottom: 10px;
 	padding-top: 5px;
+	line-height: 25px;
 }
 
 //end header
@@ -683,7 +683,12 @@
 		right: 20%;
     background-image: url(../images/icons/instagram.svg);
     width: 55px;
-    height: 55px;
+		height: 55px;
+		transition: all .3s;
+	}
+	&:hover::before{
+		background-image: url(../images/icons/instagram-white.svg);
+
 	}
 }
 
@@ -886,6 +891,7 @@
 	background-image: url(../images/icons/instagram-white.svg);
 	width: 35px;
 	height: 35px;
+	transition: all .3s;
 }
 
 .footer__social-link:hover::before {
