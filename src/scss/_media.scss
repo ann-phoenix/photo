@@ -34,70 +34,86 @@
     font-size: 23px;
     line-height: 35px;
   }
-  .about__content-title{
+
+  .about__content-title {
     margin-bottom: 40px;
   }
+
   .about__content-text {
     font-size: 20px;
   }
-  .addition__item{
+
+  .addition__item {
     padding-left: 60px;
   }
-  .addition__item:before{
+
+  .addition__item:before {
     font-size: 50px;
   }
-  .addition__item-title{
+
+  .addition__item-title {
     width: 460px;
 
   }
 
-  .steps__item{
+  .steps__item {
     width: 378px;
     margin-right: 0;
     margin-bottom: 80px;
   }
-  .steps__inner{
+
+  .steps__inner {
     flex-wrap: wrap;
   }
 
 }
+
 @media(max-width: 1200px) {
   .about__inner {
     flex-wrap: wrap;
   }
+
   .about__master {
     margin: 0 auto;
   }
+
   .about__master-info {
     margin-bottom: 50px;
   }
+
   .about__master-info {
     font-size: 25px;
   }
-  .about__master-span{
+
+  .about__master-span {
     font-size: 18px;
   }
-  .about__content-title{
+
+  .about__content-title {
     font-size: 40px;
   }
+
   .about__content {
     margin: 0 10px;
   }
+
   .about__content-text {
     padding-left: 20px;
   }
-  .addition__inner{
+
+  .addition__inner {
     justify-content: center;
   }
 
 }
 
-@media(max-width: 1035px){
-  .tariff__inner{
+@media(max-width: 1035px) {
+  .tariff__inner {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .tariff__item-title{
+
+  .tariff__item-title {
     min-height: 110px;
   }
 }
@@ -106,17 +122,12 @@
   .header__menu-link {
     font-size: 18px;
   }
-  .header{
+
+  .header {
     background-position: center;
   }
 
 }
-
-
-
-
-
-
 
 @media(max-width: 790px) {
 
@@ -182,7 +193,7 @@
     min-height: 50px;
     align-items: start;
     margin-top: 10px;
-    
+
   }
 
   .header__item-title {
@@ -235,20 +246,22 @@
   .header__menu-link::after {
     content: none;
   }
-  .steps__inner{
+
+  .steps__inner {
     justify-content: center;
     margin-bottom: 20px;
   }
+
   .steps__title {
     margin-bottom: 100px;
-}
-.steps__subtitle {
-  font-size: 24px;
-  line-height: 34px;
-}
+  }
+
+  .steps__subtitle {
+    font-size: 24px;
+    line-height: 34px;
+  }
 
 }
-
 
 @media(max-width: 695px) {
   .header__bottom {
@@ -268,14 +281,16 @@
 }
 
 @media(max-width: 520px) {
-  .about__master-img{
+  .about__master-img {
     width: 300px;
     height: 454px;
   }
-  .title{
+
+  .title {
     font-size: 40px;
   }
-  .steps__item{
+
+  .steps__item {
     font-size: 24px;
   }
 }
