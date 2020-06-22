@@ -409,7 +409,10 @@
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: column;
+	margin-right: 20px;
+  margin-bottom: 20px;
 }
+
 
 .tariff__item-title {
 	font-size: 24px;
@@ -419,6 +422,7 @@
 	text-align: center;
 	line-height: 39px;
 	margin-bottom: 35px;
+	min-height: 150px;
 }
 
 .tariff__item-price {
