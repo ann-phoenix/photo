@@ -1,7 +1,7 @@
 
 $(function(){
 	var swiper = new Swiper('.swiper1', {
-		slidesPerView: 3,
+		slidesPerView: 1,
 		spaceBetween: 10,
 		pagination: {
 			el: '.swiper-pagination',
@@ -10,6 +10,22 @@ $(function(){
 		autoplay: {
 			delay: 5500,
 			disableOnInteraction: false,
+		},
+		breakpoints: {
+			1210: {
+				slidesPerView: 3,
+				spaceBetween: 10,
+			},
+
+			825: {
+				slidesPerView: 2,
+
+			},
+			550: {
+				slidesPerView: 1,
+				spaceBetween: 10,
+			},
+
 		},
 	});
 

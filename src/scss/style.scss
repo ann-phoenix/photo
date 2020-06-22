@@ -10,6 +10,7 @@
 //start header
 .header {
 	background-size: cover;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 0 20%;
 	color: $white;
@@ -492,6 +493,7 @@
 //start steps
 .steps {
 	background-size: cover;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 0 20%;
 	color: $white;
