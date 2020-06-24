@@ -444,24 +444,18 @@
 .addition {
 	padding: 120px 0;
 }
-
-.addition__title {
-	margin-bottom: 90px;
-}
-
-.addition__inner {
+.addition__inner{
 	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
-
-
-.addition__item {
-	margin-bottom: 20px;
-	padding-left: 130px;
+.addition__item{
+	padding-left: 100px;
+	margin-bottom: 50px;
+	// margin-right: 50px;
+	// padding-left: 10px;
+	// padding-right: 10px;
 	position: relative;
-	margin-bottom: 150px;
-
 	&:before {
 		position: absolute;
 		left: 0;
@@ -471,6 +465,17 @@
 		font-size: 80px;
 		font-family: icomoon;
 	}
+	&:nth-child(odd){
+		margin-right: 50px;
+	}
+}
+
+
+
+
+
+.addition__title {
+	margin-bottom: 90px;
 }
 
 .addition__item-title {
@@ -487,12 +492,58 @@
 	margin-bottom: 20px;
 	font-size: 30px;
 	line-height: 35px;
+	min-height: 100px;		
 }
 
 .addition__item-price {
 	font-size: 30px;
 	line-height: 35px;
 }
+// 
+// .addition__inner {
+	// display: flex;
+	// justify-content: center;
+	// flex-wrap: wrap;
+// }
+// 
+// 
+// .addition__item {
+	// margin-bottom: 20px;
+	// padding-left: 130px;
+	// position: relative;
+	// margin-bottom: 150px;
+// 
+	// &:before {
+		// position: absolute;
+		// left: 0;
+		// top: 0px;
+		// height: 30%;
+		// color: #008fcb;
+		// font-size: 80px;
+		// font-family: icomoon;
+	// }
+// }
+// 
+// .addition__item-title {
+	// margin-bottom: 20px;
+	// font-size: 35px;
+	// line-height: 40px;
+	// width: 482px;
+	// padding-bottom: 10px;
+	// border-bottom: 3px solid $blue;
+// }
+// 
+// .addition__item-text {
+	// width: 500px;
+	// margin-bottom: 20px;
+	// font-size: 30px;
+	// line-height: 35px;
+// }
+// 
+// .addition__item-price {
+	// font-size: 30px;
+	// line-height: 35px;
+// }
 
 //end addition
 //start steps
@@ -622,8 +673,9 @@
 }
 
 .slide2__text {
-	min-height: 213px;
-	margin-bottom: 30px;
+	min-height: 245px;
+	max-height: 245px;
+	margin-bottom: 60px;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
@@ -687,7 +739,7 @@
 	&::before{
 		position: absolute;
 		content: "";
-		right: 20%;
+		right: 18%;
     background-image: url(../images/icons/instagram.svg);
     width: 55px;
 		height: 55px;

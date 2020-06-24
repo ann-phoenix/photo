@@ -53,6 +53,19 @@ $(function(){
 			delay: 5500,
 			disableOnInteraction: false,
 		},
+		breakpoints: {
+			1010: {
+				slidesPerView: 3,
+				spaceBetween: 10,
+			},
+			450: {
+				slidesPerView: 2,
+			},
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 10,
+			},
+		},
 	});
 
 	$(".portfolio__mini").slice(0, 8).show();
