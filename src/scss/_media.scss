@@ -1,3 +1,13 @@
+@media(max-width: 1540px) {
+  .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
 @media(max-width: 1460px) {
   .steps__item {
     width: 378px;
@@ -56,8 +66,6 @@
     font-size: 20px;
   }
 
-
-
   .addition__item {
     padding-left: 95px;
 
@@ -70,7 +78,6 @@
   .addition__item-text {
     width: 470px;
   }
-
 
   .more__box {
     display: block;
@@ -155,6 +162,28 @@
   .tariff__item-title {
     min-height: 110px;
   }
+
+  .slide2 {
+    font-size: 16px;
+    line-height: 24px;
+
+    &__img {
+      width: 65px;
+      height: 65px;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media(max-width: 999px) {
+  .slide2__text{
+    min-height: 165px;
+    max-height: 165px;
+  }
+.slide2{
+  // max-width: 450px !important;
+
+}
 }
 
 @media(max-width: 960px) {
@@ -172,16 +201,21 @@
   .addition__inner {
     justify-content: center;
   }
-  .addition__item{
+
+  .addition__item {
     margin-bottom: 60px;
   }
-  .addition__item:nth-child(odd){
+
+  .addition__item:nth-child(odd) {
     margin-right: 0px;
   }
-  .addition__item-text, .addition__item-title{
+
+  .addition__item-text,
+  .addition__item-title {
     width: 600px;
   }
-  .addition__item-text{
+
+  .addition__item-text {
     min-height: 0;
   }
 
@@ -338,15 +372,17 @@
     margin-bottom: 45px;
     padding: 10px;
   }
-
+  .portfolio__title {
+    margin-bottom: 15px;
+  }
+  .slide2__text{
+    margin-bottom: 60px;
+  }
   .more__box-link::before {
     width: 40px;
     height: 40px;
   }
 
-  .portfolio__title {
-    margin-bottom: 15px;
-  }
 
 }
 
@@ -365,18 +401,31 @@
     font-size: 20px;
     line-height: 30px;
   }
-  .addition__item{
+
+  .addition__item {
     width: 100%;
   }
-  .addition__item-text, .addition__item-title{
+
+  .addition__item-text,
+  .addition__item-title {
     width: auto;
   }
-  .addition__item-title{
+
+  .addition__item-title {
     font-size: 25px;
   }
+
   .addition__item-text,
-  .addition__item-price{
+  .addition__item-price {
     font-size: 20px;
+  }
+  .slide2__text{
+    margin-bottom: 40px;
+    min-height: 145px;
+    max-height: 145px;
+  }
+  .slide2__author{
+    flex-grow: 0;
   }
 
 }
@@ -399,6 +448,14 @@
   .title {
     font-size: 36px;
     line-height: 46px;
+  }
+}
+
+@media (max-width: 370px){
+  .slide2__text,
+  .slide2__author{
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 

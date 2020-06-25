@@ -41,6 +41,21 @@ $(function(){
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		},
+		breakpoints: {
+			1000: {
+				slidesPerView: 3,
+				spaceBetween: 40,
+			},
+			696: {
+				slidesPerView: 2,
+				spaceBetween: 40,
+			},
+			300: {
+				slidesPerView: 1,
+				spaceBetween: 40,
+			},
+
+		},
 	});
 	var swiper = new Swiper('.swiper3', {
 		slidesPerView: 3,
