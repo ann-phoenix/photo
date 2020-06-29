@@ -29,34 +29,34 @@ $(function(){
 		},
 	});
 
-	// var swiper = new Swiper('.swiper2', {
-		// slidesPerView: 3,
-		// spaceBetween: 40,
-		// loop: true,
-		// autoplay: {
-			// delay: 8000,
-			// disableOnInteraction: false,
-		// },
-		// navigation: {
-			// nextEl: '.swiper-button-next',
-			// prevEl: '.swiper-button-prev',
-		// },
-		// breakpoints: {
-			// 1000: {
-				// slidesPerView: 3,
-				// spaceBetween: 40,
-			// },
-			// 696: {
-				// slidesPerView: 2,
-				// spaceBetween: 40,
-			// },
-			// 300: {
-				// slidesPerView: 1,
-				// spaceBetween: 40,
-			// },
-// 
-		// },
-	// });
+	var swiper = new Swiper('.swiper2', {
+		slidesPerView: 1,
+		spaceBetween: 40,
+		loop: true,
+		autoplay: {
+			delay: 9000,
+			disableOnInteraction: false,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		breakpoints: {
+			1000: {
+				slidesPerView: 3,
+				spaceBetween: 40,
+			},
+			696: {
+				slidesPerView: 2,
+				spaceBetween: 40,
+			},
+			300: {
+				slidesPerView: 1,
+				spaceBetween: 40,
+			},
+
+		},
+	});
 	var swiper = new Swiper('.swiper3', {
 		slidesPerView: 3,
 		spaceBetween: 10,
@@ -107,6 +107,7 @@ $(".phone").mask("+7 (999) 99-99-999");
 $('.header__burger').on('click', function(){
 	$('.header__menu-list').slideToggle();
  });
+// 
 
 $('.header__burger').click(function(event){
 	$('.header__burger').toggleClass('active');

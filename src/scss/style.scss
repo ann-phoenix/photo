@@ -15,6 +15,7 @@
 	background-position: 0 20%;
 	color: $white;
 	position: relative;
+	overflow: hidden;
 }
 
 .header::before {
@@ -309,6 +310,15 @@
 .advantages__inner {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	position: relative;
+}
+.advantages__line{
+	border-left: 3px solid $blue;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+	top: 0;
 }
 
 .advantages__item {
@@ -317,10 +327,11 @@
 	font-size: 30px;
 	line-height: 35px;
 	margin-bottom: 100px;
-	max-width: 730px;
-	min-height: 70px;
+	max-width: 600px;
+	width: 100%;
 
-	&:last-child {
+	&:nth-child(8),
+	&:nth-child(9) {
 		margin-bottom: 0;
 	}
 }
@@ -334,14 +345,14 @@
 	font-family: 'icomoon';
 }
 
-.advantages__left {
-	padding-right: 50px;
-}
-
-.advantages__right {
-	border-left: 3px solid $blue;
-	padding-left: 50px;
-}
+// .advantages__left {
+	// padding-right: 50px;
+// }
+// 
+// .advantages__right {
+	// border-left: 3px solid $blue;
+	// padding-left: 50px;
+// }
 
 //end advantages
 //start portfolio
@@ -666,9 +677,8 @@
 }
 
 .slide2 {
-	min-height: 300px !important;
+	// min-height: 300px !important;
 	text-align: center;
-	font-size: 18px;
 	background: transparent;
 	display: flex;
 	justify-content: center;
@@ -689,17 +699,19 @@
 
 .slide2__name {
 	min-height: 30px;
+
 }
 
 .slide2__img {
-	width: 80px;
-	height: 80px;
+	width: 90px;
+	height: 90px;
 	object-fit: cover;
 	border-radius: 50%;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	margin-right: 30px;
+	border: 2px solid $white;
 }
 
 .slide2__author {
@@ -1061,11 +1073,6 @@
 		filter: brightness(1.2);
 	}
 }
-
-
-// 
-
-
 
 //end modal
 //-----------------------------------------------------------------------------------------------------------
