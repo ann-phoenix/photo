@@ -240,10 +240,10 @@
 }
 
 .about__master-img {
-	width: 500px;
 	height: 650px;
 	object-fit: cover;
 	margin-bottom: 10px;
+	min-width: 500px;
 }
 
 .about__master-info {
@@ -1097,6 +1097,31 @@
 }
 
 //end modal
+
+
+
+
+.lazyload{
+	max-width: 100%;
+	}
+
+	
+	.lazyload.fadeIn{
+				opacity: 0;
+	}
+	.lazyload{
+		transition: opacity 1s;
+		
+	}
+	.lazyload:not(.initial) {
+		transition: opacity 1s;
+	}
+	
+	.lazyload.loaded,
+	.lazyload.error,
+	[data-was-processed="true"]{
+		opacity: 1;
+	}
 //-----------------------------------------------------------------------------------------------------------
 //
 //                                                    END CODE

@@ -17,7 +17,7 @@ let gulp = require("gulp"),
 	pngquant = require("imagemin-pngquant"),
 	webphtml = require("gulp-webp-html"),
 	webpcss = require("gulp-webpcss"),
-	uglify = require("gulp-uglify"), //то же, что cssmin, только для js
+	uglify = require("gulp-uglify-es").default, //то же, что cssmin, только для js
 	concat = require("gulp-concat"), //склеивает css и js-файлы в один
 	del = require("del"), //удаляет указанные файлы и директории. Нужен для очистки перед билдом
 	ttf2woff = require("gulp-ttf2woff"), //конвертирует шрифты в веб-формат
@@ -99,9 +99,6 @@ gulp.task("style", function () {
 			"node_modules/normalize.css/normalize.css",
 			"node_modules/swiper/css/swiper.css",
 			"node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css",
-			"node_modules/slick-carousel/slick/slick.css",
-			"node_modules/aos/dist/aos.css",
-
 
 
 		])
@@ -117,11 +114,11 @@ gulp.task("script", function () {
 		.src([
 			//тут подключаем разные js в общую библиотеку. Отключите то, что вам не нужно.
 			"node_modules/jquery/dist/jquery.js",
+			// "node_modules/lazyload/lazyload.js",
+			"node_modules/vanilla-lazyload/dist/lazyload.js",
 			"node_modules/swiper/js/swiper.js",
 			"node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js",
-			"node_modules/slick-carousel/slick/slick.js",
 			"node_modules/jquery.maskedinput/src/jquery.maskedinput.js",
-			"node_modules/aos/dist/aos.js",
 		])
 		.pipe(size())
 		.pipe(babel())
